@@ -1,37 +1,32 @@
-<!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8" />
-    <title>Flortagorm</title>
-    <link rel="stylesheet" type="text/css" href="styles.css" />
-    <script defer type="text/javascript" src="src/index.js"></script>
+    <title>Flatacalories</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
   </head>
   <body>
-    <h1>FLORTAGORM</h1>
-    <!-- image card -->
-    <div class="image-container">
-      <div class="image-card">
-        <h2 id="fg-title">Image Title Goes Here</h2>
-        <img id="fg-image" src="./assets/image-placeholder.jpg" class="image" />
-        <div class="likes-section">
-          <button id="like-button" class="like-button">👍</button>
-          <span id="fg-likes" class="likes">X Likes</span>
-        </div>
-        <ul id="fg-comments" class="comments">
-          <li>This is a fake thing</li>
-          <li>Replace us all with real things</li>
-          <li>Release us from this deception</li>
-        </ul>
-        <form id="comment-form" class="comment-form">
-          <input
-            class="comment-input"
-            type="text"
-            name="comment"
-            placeholder="Add a comment..."
-          />
-          <button class="comment-button" type="submit">Post</button>
+    <div class="logo">
+      <img src="assets/logo.png" />
+    </div>
+
+    <div id="character-bar">
+      <!-- show characters names here -->
+    </div>
+
+    <div class="characterInfo">
+      <div id="detailed-info">
+        <p id="name">Character's Name</p>
+        <img
+          id="image"
+          src="assets/dummy.gif"
+        /><!-- display character image here -->
+        <h4>Total Calories: <span id="calories">Character's Calories</span></h4>
+        <form id="calories-form">
+          <input type="text" placeholder="Enter Calories" id="calories-input" />
+          <input type="submit" value="Add Calories" />
         </form>
+        <button id="reset-btn">Reset Calories</button>
       </div>
     </div>
+    <script src="src/index.js"></script>
   </body>
 </html>
